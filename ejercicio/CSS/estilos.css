@@ -1,0 +1,42 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.contenedor {
+	display: grid; 
+	grid-template-columns: 27% 45% 18%; 
+	grid-template-rows: 300px 180px; 
+	grid-template-areas: "grande grande flaca"
+						"chiquita larga flaquita";
+	grid-gap: 20px;
+						
+}
+.uno {
+	grid-area:grande;
+	background-color: grey;	
+
+}
+ 
+.dos {
+	grid-area:flaca;
+	background-color: grey;	
+
+}
+
+.tres {
+	grid-area:chiquita;
+	background-color: grey;	
+
+}
+.cuatro {
+	grid-area:larga;
+	background-color: grey;	
+
+}
+
+.cinco{
+	grid-area:flaquita;
+	background-color: grey;	
+}

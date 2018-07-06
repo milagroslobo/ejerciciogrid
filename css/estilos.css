@@ -1,0 +1,53 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: orange;
+}
+
+@media screen and ( min-width: 769px) and (max-width: 1024px){
+	body {
+		background: red;
+	}
+}
+
+.contenedor {
+	display: grid; 
+	grid-template-columns: 70% 30%; 
+	grid-template-rows: 150px 500px 200px; 
+	grid-template-areas: "header header"
+						"main aside"
+						"footer footer"
+}
+.uno {
+	grid-area: header;
+	background-color: pink;
+	padding: 20px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+ .uno nav ul li a {
+ 	list-style: none;
+ 	display: inline-block;
+ }
+.dos {
+grid-area: main;
+background-color: yellow;
+}
+
+.tres{
+	grid-area: aside;
+	background-color: lightblue;
+
+}
+
+.cuatro {
+	grid-area: footer;
+	background-color: grey;
+}

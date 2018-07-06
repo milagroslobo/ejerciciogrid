@@ -1,0 +1,65 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.contenedor {
+	display: grid; 
+	grid-template-columns: 16% 16% 33.3% 16% 16%; 
+	grid-template-rows: 150px 150px 150px; 
+	grid-template-areas: "uno dos dos tres tres"
+						"cuatro dos dos cinco cinco"
+						"seis siete ocho nueve diez";
+	grid-gap: 20px;
+						
+}
+.uno {
+	grid-area:uno;
+	background-color: grey;	
+}
+ 
+.dos {
+	grid-area:dos;
+	background-color: grey;	
+}
+
+.tres {
+	grid-area:tres;
+	background-color: grey;	
+
+}
+.cuatro {
+	grid-area:cuatro;
+	background-color: grey;	
+
+}
+
+.cinco{
+	grid-area:cinco;
+	background-color: grey;	
+}
+
+.seis{
+	grid-area:seis;
+	background-color: grey;	
+}
+.siete{
+	grid-area:siete;
+	background-color: grey;	
+}
+
+.ocho{
+	grid-area:ocho;
+	background-color: grey;	
+}
+
+.nueve{
+	grid-area:nueve;
+	background-color: grey;	
+}
+.diez{
+	grid-area:diez;
+	background-color: grey;	
+}
+
